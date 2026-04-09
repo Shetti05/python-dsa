@@ -7,3 +7,4 @@ def coin_change(coins, amount):
             dp[i] = min(dp[i], dp[i-coin]+1)
 
     return dp[amount] if dp[amount] != float('inf') else -1
+    
